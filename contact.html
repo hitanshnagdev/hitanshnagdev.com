@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bellota+Text&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <section class="sub-sub-header">
+
+    <nav id = "navbar">
+
+      <div class="nav-links">
+        <ul id = "menu">
+          <li><a href = "index.html">HOME</a></li>
+          <li><a href = "about.html">ABOUT</a></li>
+          <li><a href = "projects.html">PROJECTS</a></li>
+          <li><a href = "contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+
+
+  <section class="footer-contact">
+    <h4><b>CONTACT ME</b></h4>
+    <div class="icons-contact">
+      <i class="fa fa-facebook">
+      <p class="icon-text">Facebook</p>
+      </i>
+      </div>
+        <div class="icons-contact">
+      <i class="fa fa-envelope">
+      <p class="icon-text">Email</p>
+      </i>
+      </div>
+        <div class="icons-contact">
+      <i class="fa fa-linkedin">
+      <p class="icon-text">LinkedIn</p>
+      </i>
+    </div>
+    <div class="icons-contact">
+      <i class="fa fa-home">
+      <p class="icon-text"> Berkeley, CA</p>
+      </i>
+    </div>
+  </section>
+
+
+  <script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu")
+
+    window.onscroll = function () {
+      if(window.pageYOffset >= menu.offsetTop){
+        navbar.classList.add("sticky");
+      }
+      else{
+        navbar.classList.remove("sticky");
+      }
+    }
+
+  </script>
+</body>
+</html>
